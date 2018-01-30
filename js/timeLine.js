@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  var urlZh = "timeData/timeLine-zh.json", urlEn = "timeData/timeLine-en.json", pageNumber = 1;
+  var urlZh = "data/timeLine-zh.json", urlEn = "data/timeLine-en.json", pageNumber = 1;
 
   //检测浏览器语言
   currentLang = navigator.language;   //判断除IE外其他浏览器使用语言

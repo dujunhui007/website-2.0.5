@@ -1573,13 +1573,17 @@ ul.homeLinks li:nth-child(4) i {
     /*box-shadow: 0 0 20px #ffa81c;*/
 }
 
+#application .sectionTop{
+    position: relative;
+}
+
 #application #toDapps {
     position: absolute;
     display: block;
     width: 75px;
     height: 30px;
-    top: -50px;
-    right: 0;
+    bottom: -35px;
+    right: 15px;
     font-family: aschFont;
     /* margin: 50px auto 0 auto; */
     line-height: 30px;
@@ -1592,15 +1596,193 @@ ul.homeLinks li:nth-child(4) i {
     font-size: 16px;
 }
 
-/*@media screen and (max-width: 1910px){*/
-/*#application #toDapps{*/
-/*width: 90px;*/
-/*line-height: 36px;*/
-/*height: 36px;*/
-/*}*/
-/*}*/
+#application .swiper-container .swiper-wrapper .swiper-slide .hotTopImg{
+    position: relative;
+    width: 100%;
 
-/*feature*/
+}
+
+#application .swiper-container .swiper-wrapper .swiper-slide .hotTopImg img{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+#application .swiper-container .swiper-wrapper .swiper-slide .hotTopImg span{
+    width: 150px;
+    height: 25px;
+    line-height: 25px;
+    top: 15px;
+    left: -40px;
+    background: #fc5f45;
+    position: absolute;
+    color: #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    text-align: center;
+    z-index: 3;
+    display: none;
+}
+
+#application .swiper-container .swiper-wrapper .dapp1 .hotTopImg span{
+    display: block;
+}
+
+#application .swiper-container .swiper-wrapper .dapp2 .hotTopImg span{
+    display: block;
+}
+
+#application .swiper-container .swiper-wrapper .swiper-slide .hotTopImg i{
+    position: absolute;
+    display: block;
+}
+
+#application .swiper-container .swiper-wrapper .dapp1 .hotTopImg i{
+    width: 70px;
+    height: 66px;
+    right: 10px;
+    bottom: -45px;
+    background: url(../images/cctimeWatermark.png) no-repeat center;
+    background-size: cover;
+}
+
+#application .swiper-container .swiper-wrapper .dapp2 .hotTopImg i{
+    width: 70px;
+    height: 66px;
+    right: 10px;
+    bottom: -53px;
+    background: url(../images/kmcWatermark.png) no-repeat center;
+    background-size: cover;
+}
+
+#application .swiper-container .swiper-wrapper .dapp3 .hotTopImg i{
+    width: 70px;
+    height: 66px;
+    right: 10px;
+    bottom: -50px;
+    background: url(../images/bangWatermark.png) no-repeat center;
+    background-size: cover;
+}
+
+#application .swiper-container .swiper-wrapper .dapp4 .hotTopImg i{
+    width: 70px;
+    height: 66px;
+    right: 10px;
+    bottom: -56px;
+    background: url(../images/helloWatermark.png) no-repeat center;
+    background-size: cover;
+}
+
+#application .swiper-container .swiper-wrapper .dapp5 .hotTopImg i{
+    width:70px;
+    height: 51px;
+    right: 10px;
+    bottom: -45px;
+    background: url(../images/watermark5.png) no-repeat center;
+    background-size: cover;
+}
+
+#application .swiper-container .swiper-wrapper .dapp6 .hotTopImg i{
+    width: 100px;
+    height: 50px;
+    right: 10px;
+    bottom: -44px;
+    background: url(../images/watermark6.png) no-repeat center;
+    background-size: cover;
+}
+
+#application .swiper-container .swiper-wrapper .dapp7 .hotTopImg i{
+    width: 70px;
+    height: 58px;
+    right: 10px;
+    bottom: -53px;
+    background: url(../images/watermark7.png) no-repeat center;
+    background-size: cover;
+}
+
+
+#application .swiper-container .swiper-wrapper .dapp8 .hotTopImg i{
+    width: 70px;
+    height: 66px;
+    right: 10px;
+    bottom: -45px;
+    background: url(../images/cctimeWatermark.png) no-repeat center;
+    background-size: cover;
+}
+
+#application .swiper-container .swiper-wrapper .swiper-slide .applicationDetail{
+    padding: 25px 20px;
+    height: 300px;
+}
+
+#application .swiper-container .swiper-wrapper .swiper-slide .applicationDetail .applicationDetailTitle{
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-weight: bold;
+    font-family: aschFont;
+    letter-spacing: 1px;
+    font-size: 18px;
+    position: relative;
+    z-index: 2;
+}
+
+#application .swiper-container .swiper-wrapper .swiper-slide .applicationDetail .applicationDetailLine{
+    display: block;
+    width: 26px;
+    height: 2px;
+    background: #000;
+    margin: 15px auto 20px auto;
+}
+
+#application .swiper-container .swiper-wrapper .swiper-slide .applicationDetail .applicationDetailDescribe{
+    line-height: 20px;
+    margin-bottom: 50px;
+    color: #000;
+    opacity: 0.7;
+    font-size: 13px;
+    font-family: aschFont;
+    text-align: left;
+}
+
+#application .swiper-container .swiper-wrapper .dapp5 .applicationDetail .applicationDetailDescribe{
+    line-height: 17px;
+}
+
+#application .swiper-container .swiper-wrapper .dapp7 .applicationDetail .applicationDetailDescribe{
+    line-height: 18px;
+}
+
+#application .swiper-container .swiper-wrapper .swiper-slide .applicationDetail .applicationDetailMore:hover {
+    background: #ffa81c;
+    color: #fff;
+    border: none;
+}
+
+#application .swiper-container .swiper-wrapper .swiper-slide .applicationDetail .applicationDetailMore{
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 60px);
+    /* line-height: 20px; */
+    display: block;
+    margin: 20px auto 0px auto;
+    width: 120px;
+    height: 35px;
+    /* background: red; */
+    line-height: 35px;
+    text-align: center;
+    border-radius: 20px;
+    color: #353535;
+    font-size: 14px;
+    font-family: aschFont;
+    opacity: 0.8;
+    border: 1px solid rgba(189, 189, 189, 1);
+}
+
+
+
+    /*feature*/
 #features {
     padding: 70px 0 100px 0;
     box-sizing: border-box;
@@ -3519,7 +3701,7 @@ ul.homeLinks li:nth-child(4) i {
 #timeLine .rodemapContainer li .rodemapContainerRight .rodemapContainerRightContent li p {
     font-size: 18px;
     line-height: 30px;
-    color: rgba(0,0,0,.7);
+    color: rgba(0, 0, 0, .7);
 }
 
 #media {
@@ -3687,7 +3869,7 @@ ul.homeLinks li:nth-child(4) i {
     cursor: pointer
 }
 
-#links .linksContainer .linksItems:nth-child(1) ul li{
+#links .linksContainer .linksItems:nth-child(1) ul li {
     width: 250px;
 }
 
@@ -3780,13 +3962,13 @@ footer .footerLeft .footerWb span {
 }
 
 /*footer .footerRight a:nth-child(2):hover i {*/
-    /*display: inline-block;*/
-    /*width: 14px;*/
-    /*height: 10px;*/
-    /*background: url(../images/emailIcon2.png) no-repeat center;*/
-    /*background-size: cover;*/
-    /*vertical-align: baseline;*/
-    /*margin-right: 10px*/
+/*display: inline-block;*/
+/*width: 14px;*/
+/*height: 10px;*/
+/*background: url(../images/emailIcon2.png) no-repeat center;*/
+/*background-size: cover;*/
+/*vertical-align: baseline;*/
+/*margin-right: 10px*/
 /*}*/
 
 footer .footerRight a:hover span {
@@ -3798,11 +3980,11 @@ footer .footerRight a:hover i {
 }
 
 footer .footerRight a i {
-    color: #fff
+    color: #fff;
+    font-size: 14px;
 }
 
-
-footer .footerRight a{
+footer .footerRight a {
     display: block;
     width: 330px;
     overflow: hidden;
@@ -3820,28 +4002,24 @@ footer .footerRight p {
     font-size: 18px;
     margin-bottom: 20px;
     font-family: aschFont;
+    line-height: 30px;
 }
 
-/*footer .footerRight a:nth-child(2) i {*/
-    /*display: inline-block;*/
-    /*width: 14px;*/
-    /*height: 10px;*/
-    /*background: url(../images/emailIcon.png) no-repeat center;*/
-    /*background-size: cover;*/
-    /*vertical-align: baseline;*/
-    /*margin-right: 10px*/
-/*}*/
 
 footer .footerRight span {
     color: #fff;
     font-family: aschFont;
     margin-left: 10px;
     float: right;
+    font-size: 14px;
 }
 
-
-
 @media screen and (max-width: 1910px) {
+
+    #application .swiper-container .swiper-wrapper .swiper-slide .applicationDetail{
+        padding: 10px 10px;
+        height: 310px;
+    }
 
     nav .navContainer .navRight {
         position: relative;
@@ -3873,7 +4051,7 @@ footer .footerRight span {
         font-family: aschFont;
     }
 
-    #timeLine .toTimeLine{
+    #timeLine .toTimeLine {
         position: absolute;
         display: block;
         width: 120px;
@@ -3892,17 +4070,56 @@ footer .footerRight span {
     }
 }
 
-@media screen and (min-width:1400px) and (max-width:1910px){
+@media screen and (min-width: 1400px) and (max-width: 1910px) {
     .switchLanguageBtn {
         right: -70px;
     }
-    nav .navContainer .navRight{
+
+    nav .navContainer .navRight {
         padding-right: 205px;
     }
 }
 
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1400px) {
     .switchLanguageBtn {
         right: -5px;
     }
 }
+
+/*.hideLiLeft {*/
+    /*!*position: absolute;*!*/
+    /*!*left: -500px;*!*/
+    /*opacity: 0;*/
+    /*filter:alpha(opacity=0);*/
+
+/*}*/
+
+/*.hideLiPoint {*/
+    /*opacity: 0;*/
+    /*filter:alpha(opacity=0);*/
+
+/*}*/
+
+/*.hideLiRight {*/
+    /*!*position: absolute;*!*/
+    /*!*right: -5000px;*!*/
+    /*opacity: 0;*/
+    /*filter:alpha(opacity=0);*/
+/*}*/
+
+/*.showLiLeft {*/
+    /*opacity: 1;*/
+    /*filter:alpha(opacity=100);*/
+
+/*}*/
+
+/*.showLiPoint {*/
+    /*opacity: 1;*/
+    /*filter:alpha(opacity=100);*/
+
+/*}*/
+
+/*.showLiRight {*/
+    /*opacity: 1;*/
+    /*filter:alpha(opacity=100);*/
+/*}*/

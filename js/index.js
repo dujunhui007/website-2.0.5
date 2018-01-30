@@ -25,7 +25,11 @@ $(document).ready(function () {
 
   if (isSafari) {
     console.log(screen.width);
-    $("#introduction .introductionContainer .aschVideo span.videoText").css({"width": "360px","height": "42px","top":"calc(50% - 20px)"});
+    $("#introduction .introductionContainer .aschVideo span.videoText").css({
+      "width": "360px",
+      "height": "42px",
+      "top": "calc(50% - 20px)"
+    });
 
     $("#downloads .downloadsContainer").css("height", "522px");
     $("#downloads .downloadsContainer .downloadsContainerRight").css("height", "522px");
@@ -53,7 +57,7 @@ $(document).ready(function () {
     var sTop = $(this).scrollTop();
     // var hrLineTop = $(hrLine).offset().top;
     // if ((sTop + winHeight) > (hrLineTop + 200)) {
-      // $("#advantages hr").addClass("hrAnimate")
+    // $("#advantages hr").addClass("hrAnimate")
     // }
 
     if ($(window).scrollTop() > (homeHeight + 200)) {
@@ -64,20 +68,20 @@ $(document).ready(function () {
 
 
     if ($(window).scrollTop() > 0) {
-      $(".btnContainer .btn1 span").css("color","#000");
+      $(".btnContainer .btn1 span").css("color", "#000");
       $(".switchLanguageBtn .btnContainer .sjx").css({
-        "border-right":"2px solid #000",
-        "border-top":"2px solid #000"
+        "border-right": "2px solid #000",
+        "border-top": "2px solid #000"
       });
       $("nav").css("background", "#fff").css("box-shadow", "0 0 5px #ccc");
       $("nav .navRight .downloadWhitePaper").addClass("downloadWhitePaperTwo").removeClass("downloadWhitePaperOne");
       $("nav .navLeft  .navLogo").addClass("replaceLogoOne").removeClass("replaceLogoTwo");
       $("nav .equalThan ").addClass("moreThan").removeClass("equalThan");
     } else {
-      $(".btnContainer .btn1 span").css("color","#fff");
+      $(".btnContainer .btn1 span").css("color", "#fff");
       $(".switchLanguageBtn .btnContainer .sjx").css({
-        "border-right":"2px solid #fff",
-        "border-top":"2px solid #fff"
+        "border-right": "2px solid #fff",
+        "border-top": "2px solid #fff"
       });
       $("nav").css("background", "transparent").css("box-shadow", "0 0 0");
       $("nav .navRight .downloadWhitePaper").addClass("downloadWhitePaperOne").removeClass("downloadWhitePaperTwo");
@@ -128,7 +132,7 @@ $(document).ready(function () {
       $(this).parents(".downloadsContainerLeft").find(".dlsit-list li").eq(index).show().siblings().hide();
     }),
 
-    $("#application .applicationContainer .applicationCenter ul .toCctimePage").click(function () {
+    $("#application .dapp1").click(function () {
       window.open("dapp1.html");
     }),
 
@@ -137,7 +141,7 @@ $(document).ready(function () {
       window.open("dapp1.html");
     }),
 
-    $("#application .applicationContainer .applicationCenter ul .toKmwPage").click(function () {
+    $("#application .dapp2").click(function () {
       window.open("dapp2.html");
     }),
 
@@ -146,7 +150,7 @@ $(document).ready(function () {
       window.open("dapp2.html");
     }),
 
-    $("#application .applicationContainer .applicationCenter ul .toBbPage").click(function () {
+    $("#application .dapp3").click(function () {
       window.open("dapp3.html");
     }),
 
@@ -155,13 +159,46 @@ $(document).ready(function () {
       window.open("dapp3.html");
     }),
 
-    $("#application .applicationContainer .applicationCenter ul .toHelloPage").click(function () {
+    $("#application .dapp4").click(function () {
       window.open("dapp4.html");
     }),
 
     $("#applicationDetailMore4").click(function () {
       event.stopPropagation();
       window.open("dapp4.html");
+    })
+
+  $("#application .dapp5").click(function () {
+    window.open("dapp5.html");
+  }),
+
+    $("#applicationDetailMore5").click(function () {
+      event.stopPropagation();
+      window.open("dapp5.html");
+    })
+  $("#application .dapp6").click(function () {
+    window.open("dapp6.html");
+  }),
+
+    $("#applicationDetailMore6").click(function () {
+      event.stopPropagation();
+      window.open("dapp6.html");
+    })
+  $("#application .dapp7").click(function () {
+    window.open("dapp7.html");
+  }),
+
+    $("#applicationDetailMore7").click(function () {
+      event.stopPropagation();
+      window.open("dapp7.html");
+    })
+  $("#application .dapp8").click(function () {
+    window.open("dapp1.html");
+  }),
+
+    $("#applicationDetailMore8").click(function () {
+      event.stopPropagation();
+      window.open("dapp1.html");
     })
 
 });
