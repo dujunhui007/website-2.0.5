@@ -35,17 +35,13 @@ $(function () {
     // alert("is webKit");
   }
 
-  // console.log(screen.width);
-
   var languageFlag, getCookieKey, urlZh = "data/timeLine-zh.json", urlEn = "data/timeLine-en.json", dappUrlEn = "data/dapps-en.json", dappUrlZh = "data/dapps-zh.json",dappSwiper;
 
   languageFlag = "languageFlag";
 
   loadProperties("strings_en");
-  // setCookie(languageFlag, flag);
   getCookieKey = getCookie(languageFlag);
   if (getCookieKey) {
-    // alert(getCookieKey);
     if (getCookieKey == 0) {
       loadProperties("strings_en");
       switchEn();
@@ -66,14 +62,12 @@ $(function () {
       switchZh();
       getInfo(urlZh);
       dappGetInfo(dappUrlZh);
-      // alert(getCookieKey);
       window.flag = 1;
     } else {
       loadProperties("strings_en");
       switchEn();
       getInfo(urlEn);
       dappGetInfo(dappUrlEn);
-      // alert(getCookieKey);
       window.flag = 0;
     }
   }
@@ -292,7 +286,6 @@ $(function () {
     });
     // dappSwiper.reLoop();
 
-    // dappSwiper.slideTo(4,2000,true);
     // dappSwiper.slideTo(0);
     $(".swiper-container").mouseenter(function () {//滑过悬停
       dappSwiper.stopAutoplay();//mySwiper 为上面你swiper实例化的名称
@@ -382,28 +375,18 @@ $(function () {
       async: false,
       success: function (data) {
         var currentPageArr;
+        var ulStr = "";
         data.reverse();
         // console.log(data);
         $("#timeLine .rodemapContainer").empty();
-        // currentPageArr = data.slice((pageNumber - 1), (pageNumber + 4));
         currentPageArr = data;
-
-        // console.log(currentPageArr);
-        // var result = currentPageArr;
-        var ulStr = "";
-
         $.each(currentPageArr, function (i, result) {
 
           var particularData = result.particular;
           var particularStr = "";
 
-          // console.log(particularData);
-          // $(".timeLineContainer .timeContent .timeContentRight .timeContentIncident ul.particulars").empty();
           $.each(particularData, function (j, particularResult) {
-            // console.log(particularResult);
             particularStr += "<li><p>" + particularResult + "</p></li>";
-
-            // $(".timeLineContainer .timeContent .timeContentRight .timeContentIncident ul.particulars").append(particularStr)
           });
 
           ulStr += "     <li>\n" +
@@ -424,7 +407,6 @@ $(function () {
             "            </li>";
 
         });
-        // console.log(ulStr);
 
         $(".rodemapContainer").append(ulStr);
 
@@ -560,16 +542,9 @@ $(function () {
       switchZh();
       window.flag = 1;
       setCookie(languageFlag, flag);
-      // swiperInfo();
     }
-    // setTimeout(function () {
-    //   swiperInfo();
-    // },0)
   });
-
-  // swiperInfo();
 });
-
 
 function loadProperties(str) {
   jQuery.i18n.properties({//加载资浏览器语言对应的资源文件
@@ -743,13 +718,11 @@ function loadProperties(str) {
       $('#qqLink5').html($.i18n.prop('string_qqLink5'));
       $('#qqLink6').html($.i18n.prop('string_qqLink6'));
 
-
       $('#footerEmail2').html($.i18n.prop('string_footerEmail2'));
       $('#footerEmail3').html($.i18n.prop('string_footerEmail3'));
       $('#footerEmail4').html($.i18n.prop('string_footerEmail4'));
 
       $('#timeLineLink').html($.i18n.prop('string_timeLineLink'));
-
     }
   });
 }
