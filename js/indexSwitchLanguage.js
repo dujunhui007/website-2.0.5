@@ -37,8 +37,7 @@ $(function () {
 
 
   // console.log(screen.width);
-  var languageFlag, getCookieKey, urlZh = "data/timeLine-zh.json", urlEn = "data/timeLine-en.json",
-    dappUrlEn = "data/dapps-en.json", dappUrlZh = "data/dapps-zh.json";
+  var languageFlag, getCookieKey, urlZh = "data/timeLine-zh.json", urlEn = "data/timeLine-en.json",dappUrlEn = "data/dapps-en.json", dappUrlZh = "data/dapps-zh.json",dappSwiper;
   languageFlag = "languageFlag";
 
   loadProperties("strings_en");
@@ -227,6 +226,7 @@ $(function () {
   }
 
   function dappGetInfo(dataUrl) {
+
     $.ajax({
       url: dataUrl,
       type: "GET",
@@ -234,12 +234,12 @@ $(function () {
       async: false,
       success: function (data) {
         var currentPageArr;
+        var dappStr = "";
         // console.log(data);
 
         $("#application .swiper-container .swiper-wrapper").empty();
 
         currentPageArr = data;
-        var dappStr = "";
 
         $.each(currentPageArr, function (i, result) {
           var dapp = " dapp" + (i + 1);
@@ -274,11 +274,15 @@ $(function () {
   function swiperInfo() {
     // alert(1);
     // dappSwiper.removeAllSlides();
-    var dappSwiper = new Swiper('.swiper-container', {
+    if(dappSwiper){
+      dappSwiper.destroy
+    }
+
+     dappSwiper = new Swiper('.swiper-container', {
       direction: 'horizontal',
-      autoplay: 3000,
-      // loop: true,
-      loop: false,
+      autoplay: 4000,
+      loop: true,
+      // loop: false,
       // observer: true,
       // observeParents: true,
       // initialSlide:4,
@@ -297,13 +301,9 @@ $(function () {
     });
 
 
-    $(".swiper-slide").click(function () {
-      // alert($(this).text())
+    $("#application .dapp1").click(function () {
+      window.open("dapp1.html");
     }),
-
-      $("#application .dapp1").click(function () {
-        window.open("dapp1.html");
-      }),
 
       $("#applicationDetailMore1").click(function () {
         event.stopPropagation();
