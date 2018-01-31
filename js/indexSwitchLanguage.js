@@ -38,7 +38,7 @@ $(function () {
 
   // console.log(screen.width);
   var languageFlag, getCookieKey, urlZh = "data/timeLine-zh.json", urlEn = "data/timeLine-en.json",
-    dappUrlEn = "data/dapps-en.json", dappUrlZh = "data/dapps-zh.json";
+    dappUrlEn = "data/dapps-en.json", dappUrlZh = "data/dapps-zh.json",dappSwiper;
   languageFlag = "languageFlag";
 
   loadProperties("strings_en");
@@ -227,8 +227,6 @@ $(function () {
   }
 
   function dappGetInfo(dataUrl) {
-
-    // $("#application .swiper-container .swiper-wrapper").empty();
     $.ajax({
       url: dataUrl,
       type: "GET",
@@ -236,11 +234,10 @@ $(function () {
       async: false,
       success: function (data) {
         var currentPageArr;
-        // var t;
         console.log(data);
 
         $("#application .swiper-container .swiper-wrapper").empty();
-        // clearTimeout(t);
+
         currentPageArr = data;
         var dappStr = "";
 
@@ -266,11 +263,7 @@ $(function () {
         });
 
         $("#application .swiper-container .swiper-wrapper").append(dappStr);
-        // t=setTimeout(function () {
-        //   swiperInfo()
-        // },0);
 
-        swiperInfo();
       },
       error: function () {
         alert("数据请求失败，请重新打开")
@@ -280,21 +273,30 @@ $(function () {
 
   function swiperInfo() {
     // alert(1);
-
-    var dappSwiper = new Swiper('.swiper-container', {
+    // dappSwiper.removeAllSlides();
+     dappSwiper =  Swiper('.swiper-container', {
       direction: 'horizontal',
-      autoplay: 4000,
+      autoplay: 3000,
       loop: true,
+      // loop: false,
+      // observer: true,
+      // observeParents: true,
+      // initialSlide:4,
       slidesPerGroup: 4,
       slidesPerView: 4,
       spaceBetween: 20
     });
 
+    // dappSwiper.slideTo(4,2000,true);
+    dappSwiper.slideTo(0);
+    dappSwiper.startAutoplay();
     $(".swiper-container").mouseenter(function () {//滑过悬停
       dappSwiper.stopAutoplay();//mySwiper 为上面你swiper实例化的名称
     }).mouseleave(function () {//离开开启
       dappSwiper.startAutoplay();
     });
+
+
 
     $(".swiper-slide").click(function () {
       // alert($(this).text())
@@ -546,6 +548,7 @@ $(function () {
       loadProperties("strings_en");
       getInfo(urlEn);
       dappGetInfo(dappUrlEn);
+      swiperInfo();
       switchEn();
       window.flag = 0;
       setCookie(languageFlag, flag);
@@ -554,11 +557,15 @@ $(function () {
       loadProperties("strings_zh-CN");
       getInfo(urlZh);
       dappGetInfo(dappUrlZh);
+      swiperInfo();
       switchZh();
       window.flag = 1;
       setCookie(languageFlag, flag);
       // swiperInfo();
     }
+    // setTimeout(function () {
+    //   swiperInfo();
+    // },0)
   });
 
   // swiperInfo();

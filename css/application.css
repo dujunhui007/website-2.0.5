@@ -664,115 +664,105 @@ footer {
     background: #282a2b;
 }
 
-footer .footerContainer {
-    position: relative;
-    width: 70%;
-    margin: 0 auto;
-    max-width: 1400px;
-}
-
-footer .footerLeft {
-    width: 40%;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: space-between;
-    justify-content: space-between
-}
-
-footer .footerLeft p {
-    color: #fff;
-    height: 30px;
-    line-height: 30px;
-    font-size: 18px;
-    text-align: left;
-    margin-bottom: 20px
-}
-
-footer .footerLeft .footerWeChat p {
-    width: 100%;
-    font-family: aschFont;
-}
-
-footer .footerLeft .footerWeChat span {
-    display: block;
-    width: 100px;
-    height: 100px;
-    background: url(../images/weChat.png) no-repeat center;
-    background-size: cover
-}
-
-footer .footerLeft .footerWb p {
-    width: 100%;
-    font-family: aschFont;
-}
-
-footer .footerLeft .footerWb span {
-    display: block;
-    width: 100px;
-    height: 100px;
-    background: url(../images/weibo.png) no-repeat center;
-    background-size: cover
-}
-
-/*footer .footerRight a:nth-child(2):hover i {*/
-/*display: inline-block;*/
-/*width: 14px;*/
-/*height: 10px;*/
-/*background: url(../images/emailIcon2.png) no-repeat center;*/
-/*background-size: cover;*/
-/*vertical-align: baseline;*/
-/*margin-right: 10px*/
+/*footer .footerContainer {*/
+    /*position: relative;*/
+    /*width: 70%;*/
+    /*margin: 0 auto;*/
+    /*max-width: 1400px;*/
 /*}*/
 
-footer .footerRight a:hover span {
-    color: #ffa81c
-}
-
-footer .footerRight a:hover i {
-    color: #ffa81c
-}
-
-footer .footerRight a i {
-    color: #fff
-}
-
-
-footer .footerRight a{
-    display: block;
-    width: 330px;
-    overflow: hidden;
-}
-
-footer .footerRight {
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    right: 3%
-}
-
-footer .footerRight p {
-    color: #fff;
-    font-size: 18px;
-    margin-bottom: 20px;
-    font-family: aschFont;
-}
-
-/*footer .footerRight a:nth-child(2) i {*/
-/*display: inline-block;*/
-/*width: 14px;*/
-/*height: 10px;*/
-/*background: url(../images/emailIcon.png) no-repeat center;*/
-/*background-size: cover;*/
-/*vertical-align: baseline;*/
-/*margin-right: 10px*/
+/*footer .footerLeft {*/
+    /*width: 40%;*/
+    /*display: -webkit-flex;*/
+    /*display: flex;*/
+    /*-webkit-justify-content: space-between;*/
+    /*justify-content: space-between*/
 /*}*/
 
-footer .footerRight span {
-    color: #fff;
-    font-family: aschFont;
-    margin-left: 10px;
-    float: right;
-}
+/*footer .footerLeft p {*/
+    /*color: #fff;*/
+    /*height: 30px;*/
+    /*line-height: 30px;*/
+    /*font-size: 18px;*/
+    /*text-align: left;*/
+    /*margin-bottom: 20px*/
+/*}*/
+
+/*footer .footerLeft .footerWeChat p {*/
+    /*width: 100%;*/
+    /*font-family: aschFont;*/
+/*}*/
+
+/*footer .footerLeft .footerWeChat span {*/
+    /*display: block;*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+    /*background: url(../images/weChat.png) no-repeat center;*/
+    /*background-size: cover*/
+/*}*/
+
+/*footer .footerLeft .footerWb p {*/
+    /*width: 100%;*/
+    /*font-family: aschFont;*/
+/*}*/
+
+/*footer .footerLeft .footerWb span {*/
+    /*display: block;*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+    /*background: url(../images/weibo.png) no-repeat center;*/
+    /*background-size: cover*/
+/*}*/
+
+/*!*footer .footerRight a:nth-child(2):hover i {*!*/
+/*!*display: inline-block;*!*/
+/*!*width: 14px;*!*/
+/*!*height: 10px;*!*/
+/*!*background: url(../images/emailIcon2.png) no-repeat center;*!*/
+/*!*background-size: cover;*!*/
+/*!*vertical-align: baseline;*!*/
+/*!*margin-right: 10px*!*/
+/*!*}*!*/
+
+/*footer .footerRight a:hover span {*/
+    /*color: #ffa81c*/
+/*}*/
+
+/*footer .footerRight a:hover i {*/
+    /*color: #ffa81c*/
+/*}*/
+
+/*footer .footerRight a i {*/
+    /*color: #fff*/
+/*}*/
+
+
+/*footer .footerRight a{*/
+    /*display: block;*/
+    /*width: 330px;*/
+    /*overflow: hidden;*/
+/*}*/
+
+/*footer .footerRight {*/
+    /*display: inline-block;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*right: 3%*/
+/*}*/
+
+/*footer .footerRight p {*/
+    /*color: #fff;*/
+    /*font-size: 18px;*/
+    /*margin-bottom: 20px;*/
+    /*font-family: aschFont;*/
+/*}*/
+
+/*footer .footerRight span {*/
+    /*color: #fff;*/
+    /*font-family: aschFont;*/
+    /*margin-left: 10px;*/
+    /*float: right;*/
+/*}*/
 
 
 @media screen and (max-width: 1910px){
