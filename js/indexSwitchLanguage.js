@@ -35,9 +35,10 @@ $(function () {
     // alert("is webKit");
   }
 
-
   // console.log(screen.width);
-  var languageFlag, getCookieKey, urlZh = "data/timeLine-zh.json", urlEn = "data/timeLine-en.json",dappUrlEn = "data/dapps-en.json", dappUrlZh = "data/dapps-zh.json",dappSwiper;
+
+  var languageFlag, getCookieKey, urlZh = "data/timeLine-zh.json", urlEn = "data/timeLine-en.json", dappUrlEn = "data/dapps-en.json", dappUrlZh = "data/dapps-zh.json",dappSwiper;
+
   languageFlag = "languageFlag";
 
   loadProperties("strings_en");
@@ -93,6 +94,8 @@ $(function () {
   }
 
   function switchEn() {
+
+    $("#timeLine .toTimeLine").css({"line-height":"33px","font-size":"22px"});
 
     $("nav .navContainer .navRight ul li a").css("letter-spacing", "0px");
 
@@ -158,11 +161,11 @@ $(function () {
   }
 
   function switchZh() {
+    $("#timeLine .toTimeLine").css({"line-height":"38px","font-size":"18px"});
+
     $("nav .navContainer .navRight ul li a").css("letter-spacing", "2px");
 
-
     $("#home .aschHomeLinks a:nth-child(2)").attr("href", "http://asch-public.oss-cn-beijing.aliyuncs.com/asch.io/Asch-whitepaper-zh.pdf");
-
 
     $(".switchLanguageBtn .btnContainer .btn1 .btnFlag1 img").attr("src", "images/china.png");
     $(".switchLanguageBtn .btnContainer .btn2 .btnFlag2 img").attr("src", "images/uk.png");
@@ -226,7 +229,6 @@ $(function () {
   }
 
   function dappGetInfo(dataUrl) {
-
     $.ajax({
       url: dataUrl,
       type: "GET",
@@ -270,15 +272,13 @@ $(function () {
       }
     });
   }
-
+  
   function swiperInfo() {
-    // alert(1);
-    // dappSwiper.removeAllSlides();
-    if(dappSwiper){
-      dappSwiper.destroy
+    if(!!dappSwiper){
+      dappSwiper.destroy()
     }
 
-     dappSwiper = new Swiper('.swiper-container', {
+    dappSwiper = new Swiper('.swiper-container', {
       direction: 'horizontal',
       autoplay: 4000,
       loop: true,
@@ -290,10 +290,10 @@ $(function () {
       slidesPerView: 4,
       spaceBetween: 20
     });
+    // dappSwiper.reLoop();
 
     // dappSwiper.slideTo(4,2000,true);
     // dappSwiper.slideTo(0);
-    // dappSwiper.startAutoplay();
     $(".swiper-container").mouseenter(function () {//滑过悬停
       dappSwiper.stopAutoplay();//mySwiper 为上面你swiper实例化的名称
     }).mouseleave(function () {//离开开启
