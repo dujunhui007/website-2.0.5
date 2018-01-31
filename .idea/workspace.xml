@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="649c48b5-5d66-4353-ab63-6a5606a04ab9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/propitiousDogBig.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/subSpaceBig.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/application.css" afterPath="$PROJECT_DIR$/css/application.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/commons.min.css" afterPath="$PROJECT_DIR$/css/commons.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.min.css" afterPath="$PROJECT_DIR$/css/index.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dapp6.html" afterPath="$PROJECT_DIR$/dapp6.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dapp7.html" afterPath="$PROJECT_DIR$/dapp7.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/indexSwitchLanguage.js" afterPath="$PROJECT_DIR$/js/indexSwitchLanguage.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -24,7 +17,28 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="indexSwitchLanguage.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/indexSwitchLanguage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="496">
+              <caret line="288" column="0" lean-forward="true" selection-start-line="288" selection-start-column="0" selection-end-line="288" selection-end-column="0" />
+              <folding>
+                <element signature="e#2437#2491#0" expanded="false" />
+                <element signature="e#2520#2695#0" expanded="false" />
+                <element signature="e#2719#5984#0" expanded="false" />
+                <element signature="e#6008#9282#0" expanded="false" />
+                <element signature="e#9686#10854#0" expanded="false" />
+                <element signature="e#13697#15845#0" expanded="false" />
+                <element signature="e#15855#15881#0" expanded="false" />
+                <element signature="e#16634#16680#0" expanded="false" />
+                <element signature="e#18087#18133#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,12 +54,12 @@
         <option value="$PROJECT_DIR$/js/index.js" />
         <option value="$PROJECT_DIR$/data/dapps-zh.json" />
         <option value="$PROJECT_DIR$/data/dapps-en.json" />
-        <option value="$PROJECT_DIR$/js/indexSwitchLanguage.js" />
         <option value="$PROJECT_DIR$/css/index.min.css" />
-        <option value="$PROJECT_DIR$/css/commons.min.css" />
         <option value="$PROJECT_DIR$/css/application.css" />
         <option value="$PROJECT_DIR$/dapp6.html" />
         <option value="$PROJECT_DIR$/dapp7.html" />
+        <option value="$PROJECT_DIR$/css/commons.min.css" />
+        <option value="$PROJECT_DIR$/js/indexSwitchLanguage.js" />
       </list>
     </option>
   </component>
@@ -97,13 +111,7 @@
             <path>
               <item name="website-2.0.5" type="b2602c69:ProjectViewProjectNode" />
               <item name="website-2.0.5" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="index.less" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="website-2.0.5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="website-2.0.5" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -155,17 +163,18 @@
       <updated>1517116071638</updated>
       <workItem from="1517116073467" duration="17515000" />
       <workItem from="1517225989397" duration="20136000" />
-      <workItem from="1517305971098" duration="27533000" />
+      <workItem from="1517305971098" duration="28905000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65184000" />
+    <option name="totallyTimeSpent" value="66556000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20907739" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20907739" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -226,15 +235,15 @@
         <state relative-caret-position="9270">
           <caret line="309" column="0" lean-forward="false" selection-start-line="309" selection-start-column="0" selection-end-line="309" selection-end-column="0" />
           <folding>
-            <element signature="e#2448#2502#0" expanded="false" />
-            <element signature="e#2531#2706#0" expanded="false" />
-            <element signature="e#2730#5995#0" expanded="false" />
-            <element signature="e#6019#9293#0" expanded="false" />
-            <element signature="e#9694#10862#0" expanded="false" />
-            <element signature="e#13694#15842#0" expanded="false" />
-            <element signature="e#15852#15878#0" expanded="false" />
-            <element signature="e#16631#16677#0" expanded="false" />
-            <element signature="e#18084#18130#0" expanded="false" />
+            <element signature="e#2437#2491#0" expanded="false" />
+            <element signature="e#2520#2695#0" expanded="false" />
+            <element signature="e#2719#5984#0" expanded="false" />
+            <element signature="e#6008#9282#0" expanded="false" />
+            <element signature="e#9686#10854#0" expanded="false" />
+            <element signature="e#13697#15845#0" expanded="false" />
+            <element signature="e#15855#15881#0" expanded="false" />
+            <element signature="e#16634#16680#0" expanded="false" />
+            <element signature="e#18087#18133#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -423,24 +432,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/indexSwitchLanguage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="288" column="0" lean-forward="true" selection-start-line="288" selection-start-column="0" selection-end-line="288" selection-end-column="0" />
-          <folding>
-            <element signature="e#2448#2502#0" expanded="false" />
-            <element signature="e#2531#2706#0" expanded="false" />
-            <element signature="e#2730#5995#0" expanded="false" />
-            <element signature="e#6019#9293#0" expanded="false" />
-            <element signature="e#9694#10862#0" expanded="false" />
-            <element signature="e#13694#15842#0" expanded="false" />
-            <element signature="e#15852#15878#0" expanded="false" />
-            <element signature="e#16631#16677#0" expanded="false" />
-            <element signature="e#18084#18130#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/index.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2096">
@@ -515,14 +506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="758" column="0" lean-forward="true" selection-start-line="758" selection-start-column="0" selection-end-line="758" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/commons.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -605,6 +588,32 @@
     <entry file="file://$PROJECT_DIR$/images/dappImg7.png">
       <provider selected="true" editor-type-id="images">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/commons.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="107" column="0" lean-forward="true" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/indexSwitchLanguage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="288" column="0" lean-forward="true" selection-start-line="288" selection-start-column="0" selection-end-line="288" selection-end-column="0" />
+          <folding>
+            <element signature="e#2437#2491#0" expanded="false" />
+            <element signature="e#2520#2695#0" expanded="false" />
+            <element signature="e#2719#5984#0" expanded="false" />
+            <element signature="e#6008#9282#0" expanded="false" />
+            <element signature="e#9686#10854#0" expanded="false" />
+            <element signature="e#13697#15845#0" expanded="false" />
+            <element signature="e#15855#15881#0" expanded="false" />
+            <element signature="e#16634#16680#0" expanded="false" />
+            <element signature="e#18087#18133#0" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

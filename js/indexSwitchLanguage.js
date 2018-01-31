@@ -38,7 +38,7 @@ $(function () {
 
   // console.log(screen.width);
   var languageFlag, getCookieKey, urlZh = "data/timeLine-zh.json", urlEn = "data/timeLine-en.json",
-    dappUrlEn = "data/dapps-en.json", dappUrlZh = "data/dapps-zh.json",dappSwiper;
+    dappUrlEn = "data/dapps-en.json", dappUrlZh = "data/dapps-zh.json";
   languageFlag = "languageFlag";
 
   loadProperties("strings_en");
@@ -234,7 +234,7 @@ $(function () {
       async: false,
       success: function (data) {
         var currentPageArr;
-        console.log(data);
+        // console.log(data);
 
         $("#application .swiper-container .swiper-wrapper").empty();
 
@@ -274,11 +274,11 @@ $(function () {
   function swiperInfo() {
     // alert(1);
     // dappSwiper.removeAllSlides();
-     dappSwiper =  Swiper('.swiper-container', {
+    var dappSwiper = new Swiper('.swiper-container', {
       direction: 'horizontal',
       autoplay: 3000,
-      loop: true,
-      // loop: false,
+      // loop: true,
+      loop: false,
       // observer: true,
       // observeParents: true,
       // initialSlide:4,
@@ -288,14 +288,13 @@ $(function () {
     });
 
     // dappSwiper.slideTo(4,2000,true);
-    dappSwiper.slideTo(0);
-    dappSwiper.startAutoplay();
+    // dappSwiper.slideTo(0);
+    // dappSwiper.startAutoplay();
     $(".swiper-container").mouseenter(function () {//滑过悬停
       dappSwiper.stopAutoplay();//mySwiper 为上面你swiper实例化的名称
     }).mouseleave(function () {//离开开启
       dappSwiper.startAutoplay();
     });
-
 
 
     $(".swiper-slide").click(function () {
