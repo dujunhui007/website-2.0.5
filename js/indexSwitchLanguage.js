@@ -37,7 +37,8 @@ $(function () {
 
 
   // console.log(screen.width);
-  var languageFlag, getCookieKey, urlZh = "data/timeLine-zh.json", urlEn = "data/timeLine-en.json";
+  var languageFlag, getCookieKey, urlZh = "data/timeLine-zh.json", urlEn = "data/timeLine-en.json",
+    dappUrlEn = "data/dapps-en.json", dappUrlZh = "data/dapps-zh.json";
   languageFlag = "languageFlag";
 
   loadProperties("strings_en");
@@ -49,11 +50,13 @@ $(function () {
       loadProperties("strings_en");
       switchEn();
       getInfo(urlEn);
+      dappGetInfo(dappUrlEn);
       window.flag = 1;
     } else {
       loadProperties("strings_zh-CN");
       switchZh();
       getInfo(urlZh);
+      dappGetInfo(dappUrlZh);
       window.flag = 0;
     }
     window.flag = getCookieKey;
@@ -62,16 +65,20 @@ $(function () {
       loadProperties("strings_zh-CN");
       switchZh();
       getInfo(urlZh);
+      dappGetInfo(dappUrlZh);
       // alert(getCookieKey);
       window.flag = 1;
     } else {
       loadProperties("strings_en");
       switchEn();
       getInfo(urlEn);
+      dappGetInfo(dappUrlEn);
       // alert(getCookieKey);
       window.flag = 0;
     }
   }
+
+  swiperInfo();
 
   function setCookie(key, value) {
     document.cookie = key + "=" + escape(value);
@@ -217,6 +224,153 @@ $(function () {
         "padding-top": "5px"
       });
     }
+  }
+
+  function dappGetInfo(dataUrl) {
+
+    // $("#application .swiper-container .swiper-wrapper").empty();
+    $.ajax({
+      url: dataUrl,
+      type: "GET",
+      dataType: "json",
+      async: false,
+      success: function (data) {
+        var currentPageArr;
+        // var t;
+        console.log(data);
+
+        $("#application .swiper-container .swiper-wrapper").empty();
+        // clearTimeout(t);
+        currentPageArr = data;
+        var dappStr = "";
+
+        $.each(currentPageArr, function (i, result) {
+          var dapp = " dapp" + (i + 1);
+          dappStr += "   <div class='swiper-slide " + dapp + "'>\n" +
+            "                <div class=\"hotTopImg\">\n" +
+            "                    <img class=\"hotTopImgUrl\" src='" + result.dappImgUrl + "' alt=\"hotTopImg\">\n" +
+            "                    <span>Hot</span>\n" +
+            "                    <i>\n" +
+            "                        <img src='" + result.dappWatermarkUrl + "' alt=\"cctimeWatermark.png\">\n" +
+            "                    </i>\n" +
+            "                </div>\n" +
+            "                <div class=\"applicationDetail\">\n" +
+            "                    <p class=\"applicationDetailTitle\">" + result.dappName + "</p>\n" +
+            "                    <span class=\"applicationDetailLine\"></span>\n" +
+            "                    <p class=\"applicationDetailDescribe\">" + result.description + "</p>\n" +
+            "                    <a class=\"applicationDetailMore\" href=\"javascript:;\">" + result.link + "</a>\n" +
+            "                </div>\n" +
+            "\n" +
+            "            </div>"
+
+        });
+
+        $("#application .swiper-container .swiper-wrapper").append(dappStr);
+        // t=setTimeout(function () {
+        //   swiperInfo()
+        // },0);
+
+        swiperInfo();
+      },
+      error: function () {
+        alert("数据请求失败，请重新打开")
+      }
+    });
+  }
+
+  function swiperInfo() {
+    // alert(1);
+
+    var dappSwiper = new Swiper('.swiper-container', {
+      direction: 'horizontal',
+      autoplay: 4000,
+      loop: true,
+      slidesPerGroup: 4,
+      slidesPerView: 4,
+      spaceBetween: 20
+    });
+
+    $(".swiper-container").mouseenter(function () {//滑过悬停
+      dappSwiper.stopAutoplay();//mySwiper 为上面你swiper实例化的名称
+    }).mouseleave(function () {//离开开启
+      dappSwiper.startAutoplay();
+    });
+
+    $(".swiper-slide").click(function () {
+      // alert($(this).text())
+    }),
+
+      $("#application .dapp1").click(function () {
+        window.open("dapp1.html");
+      }),
+
+      $("#applicationDetailMore1").click(function () {
+        event.stopPropagation();
+        window.open("dapp1.html");
+      }),
+
+      $("#application .dapp2").click(function () {
+        window.open("dapp2.html");
+      }),
+
+      $("#applicationDetailMore2").click(function () {
+        event.stopPropagation();
+        window.open("dapp2.html");
+      }),
+
+      $("#application .dapp3").click(function () {
+        window.open("dapp3.html");
+      }),
+
+      $("#applicationDetailMore3").click(function () {
+        event.stopPropagation();
+        window.open("dapp3.html");
+      }),
+
+      $("#application .dapp4").click(function () {
+        window.open("dapp4.html");
+      }),
+
+      $("#applicationDetailMore4").click(function () {
+        event.stopPropagation();
+        window.open("dapp4.html");
+      }),
+
+      $("#application .dapp5").click(function () {
+        window.open("dapp5.html");
+      }),
+
+      $("#applicationDetailMore5").click(function () {
+        event.stopPropagation();
+        window.open("dapp5.html");
+      }),
+
+      $("#application .dapp6").click(function () {
+        window.open("dapp6.html");
+      }),
+
+      $("#applicationDetailMore6").click(function () {
+        event.stopPropagation();
+        window.open("dapp6.html");
+      }),
+
+      $("#application .dapp7").click(function () {
+        window.open("dapp7.html");
+      }),
+
+      $("#applicationDetailMore7").click(function () {
+        event.stopPropagation();
+        window.open("dapp7.html");
+      }),
+
+      $("#application .dapp8").click(function () {
+        window.open("dapp1.html");
+      }),
+
+      $("#applicationDetailMore8").click(function () {
+        event.stopPropagation();
+        window.open("dapp1.html");
+      })
   }
 
   function getInfo(languageUrl) {
@@ -386,23 +540,28 @@ $(function () {
   //
   // });
 
-
   $(".switchLanguageBtn .btnContainer .btn2").click(function () {
 
     if (flag == 1) {
       loadProperties("strings_en");
       getInfo(urlEn);
+      dappGetInfo(dappUrlEn);
+      switchEn();
       window.flag = 0;
       setCookie(languageFlag, flag);
-      switchEn();
+      // swiperInfo();
     } else {
       loadProperties("strings_zh-CN");
       getInfo(urlZh);
+      dappGetInfo(dappUrlZh);
+      switchZh();
       window.flag = 1;
       setCookie(languageFlag, flag);
-      switchZh();
+      // swiperInfo();
     }
   });
+
+  // swiperInfo();
 });
 
 

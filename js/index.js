@@ -166,35 +166,35 @@ $(document).ready(function () {
     $("#applicationDetailMore4").click(function () {
       event.stopPropagation();
       window.open("dapp4.html");
-    })
+    }),
 
-  $("#application .dapp5").click(function () {
-    window.open("dapp5.html");
-  }),
+    $("#application .dapp5").click(function () {
+      window.open("dapp5.html");
+    }),
 
     $("#applicationDetailMore5").click(function () {
       event.stopPropagation();
       window.open("dapp5.html");
-    })
-  $("#application .dapp6").click(function () {
-    window.open("dapp6.html");
-  }),
+    }),
+    $("#application .dapp6").click(function () {
+      window.open("dapp6.html");
+    }),
 
     $("#applicationDetailMore6").click(function () {
       event.stopPropagation();
       window.open("dapp6.html");
-    })
-  $("#application .dapp7").click(function () {
-    window.open("dapp7.html");
-  }),
+    }),
+    $("#application .dapp7").click(function () {
+      window.open("dapp7.html");
+    }),
 
     $("#applicationDetailMore7").click(function () {
       event.stopPropagation();
       window.open("dapp7.html");
-    })
-  $("#application .dapp8").click(function () {
-    window.open("dapp1.html");
-  }),
+    }),
+    $("#application .dapp8").click(function () {
+      window.open("dapp1.html");
+    }),
 
     $("#applicationDetailMore8").click(function () {
       event.stopPropagation();
