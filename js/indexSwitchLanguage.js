@@ -38,7 +38,7 @@ $(function () {
 
   // console.log(screen.width);
   var languageFlag, getCookieKey, urlZh = "data/timeLine-zh.json", urlEn = "data/timeLine-en.json",
-    dappUrlEn = "data/dapps-en.json", dappUrlZh = "data/dapps-zh.json";
+    dappUrlEn = "data/dapps-en.json", dappUrlZh = "data/dapps-zh.json",dappSwiper
   languageFlag = "languageFlag";
 
   loadProperties("strings_en");
@@ -270,15 +270,17 @@ $(function () {
       }
     });
   }
-
+  
   function swiperInfo() {
-    // alert(1);
+    if(!!dappSwiper){
+      dappSwiper.destroy()
+    }
     // dappSwiper.removeAllSlides();
-    var dappSwiper = new Swiper('.swiper-container', {
+    dappSwiper = new Swiper('.swiper-container', {
       direction: 'horizontal',
       autoplay: 3000,
-      // loop: true,
-      loop: false,
+      loop: true,
+      // loop: false,
       // observer: true,
       // observeParents: true,
       // initialSlide:4,
@@ -286,6 +288,7 @@ $(function () {
       slidesPerView: 4,
       spaceBetween: 20
     });
+    // dappSwiper.reLoop();
 
     // dappSwiper.slideTo(4,2000,true);
     // dappSwiper.slideTo(0);
