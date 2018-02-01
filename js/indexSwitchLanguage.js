@@ -481,7 +481,6 @@ $(function () {
   //
   // });
 
-
   // $(".rodemapContainer").scroll(function () {
   //   // setTimeout(function () {
   //   //   var lis=$("#timeLine .rodemapContainer li");
@@ -524,7 +523,6 @@ $(function () {
   // });
 
   $(".switchLanguageBtn .btnContainer .btn2").click(function () {
-
     if (flag == 1) {
       loadProperties("strings_en");
       getInfo(urlEn);
@@ -533,7 +531,6 @@ $(function () {
       switchEn();
       window.flag = 0;
       setCookie(languageFlag, flag);
-      // swiperInfo();
     } else {
       loadProperties("strings_zh-CN");
       getInfo(urlZh);

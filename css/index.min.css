@@ -1573,7 +1573,7 @@ ul.homeLinks li:nth-child(4) i {
     /*box-shadow: 0 0 20px #ffa81c;*/
 }
 
-#application .sectionTop{
+#application .sectionTop {
     position: relative;
 }
 
@@ -1596,19 +1596,40 @@ ul.homeLinks li:nth-child(4) i {
     font-size: 16px;
 }
 
-#application .swiper-container .swiper-wrapper .swiper-slide .hotTopImg{
+.swiper-container {
+    width: 70%;
+    max-width: 1400px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.swiper-slide {
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.swiper-slide:hover {
+    box-shadow: 0 0 20px #ccc;
+}
+
+#application .swiper-container .swiper-wrapper .swiper-slide .hotTopImg {
     position: relative;
     width: 100%;
 
 }
 
-#application .swiper-container .swiper-wrapper .swiper-slide .hotTopImg .hotTopImgUrl{
+#application .swiper-container .swiper-wrapper .swiper-slide .hotTopImg .hotTopImgUrl {
     position: relative;
     z-index: 2;
     width: 100%;
 }
 
-#application .swiper-container .swiper-wrapper .swiper-slide .hotTopImg span{
+#application .swiper-container .swiper-wrapper .swiper-slide .hotTopImg span {
     width: 150px;
     height: 25px;
     line-height: 25px;
@@ -1624,24 +1645,24 @@ ul.homeLinks li:nth-child(4) i {
     display: none;
 }
 
-#application .swiper-container .swiper-wrapper .dapp1 .hotTopImg span{
+#application .swiper-container .swiper-wrapper .dapp1 .hotTopImg span {
     display: block;
 }
 
-#application .swiper-container .swiper-wrapper .dapp2 .hotTopImg span{
+#application .swiper-container .swiper-wrapper .dapp2 .hotTopImg span {
     display: block;
 }
 
-#application .swiper-container .swiper-wrapper .swiper-slide .hotTopImg i{
+#application .swiper-container .swiper-wrapper .swiper-slide .hotTopImg i {
     position: absolute;
     display: block;
 }
 
-#application .swiper-container .swiper-wrapper .swiper-slide .hotTopImg i img{
+#application .swiper-container .swiper-wrapper .swiper-slide .hotTopImg i img {
     width: 100%;
 }
 
-#application .swiper-container .swiper-wrapper .dapp1 .hotTopImg i{
+#application .swiper-container .swiper-wrapper .dapp1 .hotTopImg i {
     width: 70px;
     height: 66px;
     right: 10px;
@@ -1650,8 +1671,7 @@ ul.homeLinks li:nth-child(4) i {
     /*background-size: cover;*/
 }
 
-
-#application .swiper-container .swiper-wrapper .dapp2 .hotTopImg i{
+#application .swiper-container .swiper-wrapper .dapp2 .hotTopImg i {
     width: 70px;
     height: 66px;
     right: 10px;
@@ -1660,7 +1680,7 @@ ul.homeLinks li:nth-child(4) i {
     /*background-size: cover;*/
 }
 
-#application .swiper-container .swiper-wrapper .dapp3 .hotTopImg i{
+#application .swiper-container .swiper-wrapper .dapp3 .hotTopImg i {
     width: 70px;
     height: 66px;
     right: 10px;
@@ -1669,7 +1689,7 @@ ul.homeLinks li:nth-child(4) i {
     /*background-size: cover;*/
 }
 
-#application .swiper-container .swiper-wrapper .dapp4 .hotTopImg i{
+#application .swiper-container .swiper-wrapper .dapp4 .hotTopImg i {
     width: 70px;
     height: 66px;
     right: 10px;
@@ -1678,8 +1698,8 @@ ul.homeLinks li:nth-child(4) i {
     /*background-size: cover;*/
 }
 
-#application .swiper-container .swiper-wrapper .dapp5 .hotTopImg i{
-    width:70px;
+#application .swiper-container .swiper-wrapper .dapp5 .hotTopImg i {
+    width: 70px;
     height: 51px;
     right: 10px;
     bottom: -45px;
@@ -1687,7 +1707,7 @@ ul.homeLinks li:nth-child(4) i {
     /*background-size: cover;*/
 }
 
-#application .swiper-container .swiper-wrapper .dapp6 .hotTopImg i{
+#application .swiper-container .swiper-wrapper .dapp6 .hotTopImg i {
     width: 100px;
     height: 50px;
     right: 10px;
@@ -1696,7 +1716,7 @@ ul.homeLinks li:nth-child(4) i {
     /*background-size: cover;*/
 }
 
-#application .swiper-container .swiper-wrapper .dapp7 .hotTopImg i{
+#application .swiper-container .swiper-wrapper .dapp7 .hotTopImg i {
     width: 70px;
     height: 58px;
     right: 10px;
@@ -1705,8 +1725,7 @@ ul.homeLinks li:nth-child(4) i {
     /*background-size: cover;*/
 }
 
-
-#application .swiper-container .swiper-wrapper .dapp8 .hotTopImg i{
+#application .swiper-container .swiper-wrapper .dapp8 .hotTopImg i {
     width: 70px;
     height: 66px;
     right: 10px;
@@ -1715,12 +1734,12 @@ ul.homeLinks li:nth-child(4) i {
     /*background-size: cover;*/
 }
 
-#application .swiper-container .swiper-wrapper .swiper-slide .applicationDetail{
+#application .swiper-container .swiper-wrapper .swiper-slide .applicationDetail {
     padding: 25px 20px;
     height: 300px;
 }
 
-#application .swiper-container .swiper-wrapper .swiper-slide .applicationDetail .applicationDetailTitle{
+#application .swiper-container .swiper-wrapper .swiper-slide .applicationDetail .applicationDetailTitle {
     width: 100%;
     height: 25px;
     line-height: 25px;
@@ -1733,7 +1752,7 @@ ul.homeLinks li:nth-child(4) i {
     z-index: 2;
 }
 
-#application .swiper-container .swiper-wrapper .swiper-slide .applicationDetail .applicationDetailLine{
+#application .swiper-container .swiper-wrapper .swiper-slide .applicationDetail .applicationDetailLine {
     display: block;
     width: 26px;
     height: 2px;
@@ -1741,7 +1760,7 @@ ul.homeLinks li:nth-child(4) i {
     margin: 15px auto 20px auto;
 }
 
-#application .swiper-container .swiper-wrapper .swiper-slide .applicationDetail .applicationDetailDescribe{
+#application .swiper-container .swiper-wrapper .swiper-slide .applicationDetail .applicationDetailDescribe {
     line-height: 20px;
     margin-bottom: 50px;
     color: #000;
@@ -1751,11 +1770,11 @@ ul.homeLinks li:nth-child(4) i {
     text-align: left;
 }
 
-#application .swiper-container .swiper-wrapper .dapp5 .applicationDetail .applicationDetailDescribe{
+#application .swiper-container .swiper-wrapper .dapp5 .applicationDetail .applicationDetailDescribe {
     line-height: 16px;
 }
 
-#application .swiper-container .swiper-wrapper .dapp7 .applicationDetail .applicationDetailDescribe{
+#application .swiper-container .swiper-wrapper .dapp7 .applicationDetail .applicationDetailDescribe {
     line-height: 16px;
 }
 
@@ -1765,7 +1784,7 @@ ul.homeLinks li:nth-child(4) i {
     border: none;
 }
 
-#application .swiper-container .swiper-wrapper .swiper-slide .applicationDetail .applicationDetailMore{
+#application .swiper-container .swiper-wrapper .swiper-slide .applicationDetail .applicationDetailMore {
     position: absolute;
     bottom: 20px;
     left: calc(50% - 60px);
@@ -1785,9 +1804,7 @@ ul.homeLinks li:nth-child(4) i {
     border: 1px solid rgba(189, 189, 189, 1);
 }
 
-
-
-    /*feature*/
+/*feature*/
 #features {
     padding: 70px 0 100px 0;
     box-sizing: border-box;
@@ -3683,7 +3700,7 @@ ul.homeLinks li:nth-child(4) i {
     /*background: red;*/
     display: inline-block;
     vertical-align: top;
-    padding:5px 30px 0px 30px;
+    padding: 5px 30px 0px 30px;
 }
 
 #timeLine .rodemapContainer li .rodemapContainerRight .rodemapContainerRightTitle p {
@@ -3911,13 +3928,12 @@ ul.homeLinks li:nth-child(4) i {
     /*color: #cdcdcd*/
 }
 
-
 @media screen and (max-width: 1910px) {
-    #application #toDapps{
+    #application #toDapps {
         right: 12px;
     }
 
-    #application .swiper-container .swiper-wrapper .swiper-slide .applicationDetail{
+    #application .swiper-container .swiper-wrapper .swiper-slide .applicationDetail {
         padding: 10px 10px;
         height: 310px;
     }
@@ -3988,39 +4004,39 @@ ul.homeLinks li:nth-child(4) i {
 }
 
 /*.hideLiLeft {*/
-    /*!*position: absolute;*!*/
-    /*!*left: -500px;*!*/
-    /*opacity: 0;*/
-    /*filter:alpha(opacity=0);*/
+/*!*position: absolute;*!*/
+/*!*left: -500px;*!*/
+/*opacity: 0;*/
+/*filter:alpha(opacity=0);*/
 
 /*}*/
 
 /*.hideLiPoint {*/
-    /*opacity: 0;*/
-    /*filter:alpha(opacity=0);*/
+/*opacity: 0;*/
+/*filter:alpha(opacity=0);*/
 
 /*}*/
 
 /*.hideLiRight {*/
-    /*!*position: absolute;*!*/
-    /*!*right: -5000px;*!*/
-    /*opacity: 0;*/
-    /*filter:alpha(opacity=0);*/
+/*!*position: absolute;*!*/
+/*!*right: -5000px;*!*/
+/*opacity: 0;*/
+/*filter:alpha(opacity=0);*/
 /*}*/
 
 /*.showLiLeft {*/
-    /*opacity: 1;*/
-    /*filter:alpha(opacity=100);*/
+/*opacity: 1;*/
+/*filter:alpha(opacity=100);*/
 
 /*}*/
 
 /*.showLiPoint {*/
-    /*opacity: 1;*/
-    /*filter:alpha(opacity=100);*/
+/*opacity: 1;*/
+/*filter:alpha(opacity=100);*/
 
 /*}*/
 
 /*.showLiRight {*/
-    /*opacity: 1;*/
-    /*filter:alpha(opacity=100);*/
+/*opacity: 1;*/
+/*filter:alpha(opacity=100);*/
 /*}*/
