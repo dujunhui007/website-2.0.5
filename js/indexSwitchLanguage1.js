@@ -417,6 +417,111 @@ $(function () {
     });
   }
 
+  // function addAnimate() {
+  //   var rHeight = $(".rodemapContainer").offset().top;
+  //   var lis = $("#timeLine .timeLineContainer .rodemapContainer li");
+  //
+  //   console.log(rHeight);
+  //
+  //   console.log(lis);
+  //   $.each(lis, function (k, result) {
+  //     if ($(this).offset().top <= rHeight) {
+  //       console.log($(this).offset().top);
+  //     }
+  //   })
+  //
+  //   // lis.each(function () {
+  //   //   if (($(this).offset().top - rHeight)>0) {
+  //   //     $(this).addClass("hideLi")
+  //   //   }
+  //   //
+  //   // })
+  //
+  //
+  //   // $.each(lis, function (k, lisResult) {
+  //   //   if (($(this).offset().top - $(".rodemapContainer").scrollTop())<=0) {
+  //   //     // console.log(2);
+  //   //   }
+  //   // })
+  // }
+
+  // addAnimate();
+
+  // $(".rodemapContainer").scroll(function () {
+  //   var rHeight = $(".rodemapContainer").offset().top;
+  //   var lis = $("#timeLine .timeLineContainer .rodemapContainer li");
+  //
+  //   console.log(rHeight);
+  //
+  //   // console.log(lis);
+  //   $.each(lis, function (k, result) {
+  //     if ($(this).offset().top <= (rHeight+20)) {
+  //       // console.log($(this).offset().top);
+  //       // $(this).find(".rodemapContainerLeft").addClass("hideLiLeft").removeClass("showLiLeft");
+  //       // $(this).find(".point").addClass("hideLiPoint").removeClass("showLiPoint");
+  //       // $(this).find(".rodemapContainerRight").addClass("hideLiRight").removeClass("showLiRight");
+  //
+  //       $(this).find(".rodemapContainerLeft").css("opacity","0");
+  //       $(this).find(".point").css("opacity","0");
+  //       $(this).find(".rodemapContainerRight").css("opacity","0");
+  //
+  //     }else {
+  //       // $(this).find(".rodemapContainerLeft").addClass("showLiLeft").removeClass("hideLiLeft");
+  //       // $(this).find(".point").addClass("showLiPoint").removeClass("hideLiPoint");
+  //       // $(this).find(".rodemapContainerRight").addClass("showLiRight").removeClass("hideLiRight");
+  //
+  //       $(this).find(".rodemapContainerLeft").css("opacity","1");
+  //       $(this).find(".point").css("opacity","1");
+  //       $(this).find(".rodemapContainerRight").css("opacity","1");
+  //     }
+  //   })
+  //
+  //
+  //
+  //
+  // });
+
+  // $(".rodemapContainer").scroll(function () {
+  //   // setTimeout(function () {
+  //   //   var lis=$("#timeLine .rodemapContainer li");
+  //   //   console.log(lis);
+  //   //   $.each(lis,function (k,lisResult) {
+  //   //     // console.log(lisResult.scrollTop);
+  //   //     console.log(lisResult.offset().top);;
+  //   //   })
+  //   // }, 300)
+  //   var rHeight = $(".rodemapContainer").offset().top;
+  //   // var lis = $("#timeLine .timeLineContainer .rodemapContainer li");
+  //
+  //   console.log(rHeight);
+  //
+  //   // console.log(lis);
+  //   // $.each(lis, function (k, lisResult) {
+  //   //   if ($(this).offset().top - $(".rodemapContainer").scrollTop()) {
+  //   //     console.log(2);
+  //   //   }
+  //
+  //
+  //     // console.log($(this).offset().top);
+  //     // console.log(lisResult);
+  //   // })
+  //
+  //
+  //   // $.each(lis, function (k, lisResult) {
+  //   //
+  //   //   console.log(lisResult.position().top);
+  //   //       // console.log(lisResult.scrollTop);
+  //   //       console.log(lisResult.offset().top);
+  //   //       console.log(lisResult);
+  //   //     })
+  //   // });
+  //
+  //   // if ($(".rodemapContainer").scrollTop() >= 0) {
+  //   //   console.log(($(".rodemapContainer").scrollTop()))
+  //   // }
+  //
+  // });
+
   $(".switchLanguageBtn .btnContainer .btn2").click(function () {
     if (flag == 1) {
       loadProperties("strings_en");
@@ -615,7 +720,7 @@ function loadProperties(str) {
       $('#footerEmail4').html($.i18n.prop('string_footerEmail4'));
 
       $('#timeLineLink').html($.i18n.prop('string_timeLineLink'));
-
+      
       $('#dappsStatement1').html($.i18n.prop('string_dappsStatement1'));
     }
   });

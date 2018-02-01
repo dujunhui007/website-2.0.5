@@ -1596,6 +1596,29 @@ ul.homeLinks li:nth-child(4) i {
     font-size: 16px;
 }
 
+#application .sectionTop #dappsStatement{
+    position: absolute;
+    left: 0;
+    bottom: -45px;
+    text-align: left;
+    padding-left: 25px;
+    box-sizing: border-box;
+}
+
+#application  #dappsStatement1{
+    width: 70%;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: left;
+    height: 40px;
+    line-height: 40px;
+    margin-top: -5px;
+    font-size: 14px;
+    color: rgba(0,0,0,.5);
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
 .swiper-container {
     width: 70%;
     max-width: 1400px;
