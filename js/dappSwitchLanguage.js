@@ -138,6 +138,7 @@ function loadProperties(str) {
       $('#applicationCenterTitle4').html($.i18n.prop('string_applicationCenterTitle1'));
       $('#applicationCenterTitle5').html($.i18n.prop('string_applicationCenterTitle1'));
       $('#applicationCenterTitle6').html($.i18n.prop('string_applicationCenterTitle1'));
+      $('#applicationCenterTitle7').html($.i18n.prop('string_applicationCenterTitle1'));
 
       $('#dappsList').html($.i18n.prop('string_dappsList'));
       $('#dappsTitle2').html($.i18n.prop('string_dappsTitle2'));
