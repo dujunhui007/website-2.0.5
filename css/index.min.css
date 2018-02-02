@@ -3732,6 +3732,7 @@ ul.homeLinks li:nth-child(4) i {
     line-height: 50px;
     text-align: left;
     font-size: 26px;
+    font-family: aschFont;
     color: rgba(0, 0, 0, .7);
     text-overflow: ellipsis;
     overflow: hidden;
@@ -3749,6 +3750,7 @@ ul.homeLinks li:nth-child(4) i {
 
 #timeLine .rodemapContainer li .rodemapContainerRight .rodemapContainerRightContent li p {
     font-size: 18px;
+    font-family: aschFont;
     line-height: 30px;
     color: rgba(0, 0, 0, .7);
 }
